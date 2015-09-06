@@ -1,3 +1,0 @@
-# CPUG
-
-(Under construction)
