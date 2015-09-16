@@ -1,0 +1,10 @@
+# Site settings
+title: PyDiff - Python Cardiff
+description: PyDiff is a Python and Django user group based in Cardiff, Wales.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: PyDiff
+github_username:  PyDiff
+
+# Build settings
+markdown: kramdown
