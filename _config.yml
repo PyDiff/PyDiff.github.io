@@ -6,6 +6,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: PyDiff
 github_username:  PyDiff
 email: "contact@pydiff.org"
+gitter_url: "https://gitter.im/PyDiff/PyDiff.github.io"
 
 # Build settings
 markdown: kramdown
