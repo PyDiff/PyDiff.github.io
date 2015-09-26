@@ -4,20 +4,36 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<p><strong>PyDiff</strong> holds monthly meetups in Cardiff for anyone who uses or wants to learn about <a href="http://python.org">Python</a>.</p>
+
+<p>Everyone's welcome, from experienced programmers to new learners, wherever their interest lies.</p>
+
+<p>We hold technical talks and workshops and occasional social events.</p>
+
+<p>We're also involved in a number of international Python/Django software community conferences -  we've recently held:
+
+  <ul>
+    <li><a href="http://djangoweekend.org">Django Weekend Cardiff 2014</a></li>
+    <li><a href="http://python-namibia.org">Python Nambia 2015</a></li>
+    <li><a href="http://2015.djangocon.eu">DjangoCon Europe 2015</a></li>
+  </ul>
+
+and we'll be involved in PyCon Namibia 2016 in February, while <a href="http://pyconuk.org">PyCon UK</a> will come to Cardiff in September 2016.</p>
+
+  <h1 class="page-heading">Forthcoming events</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.events %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+        {% if post.venue %}
+          at <span class="post-meta">{{ post.venue }}</span>
+        {% endif %}
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
