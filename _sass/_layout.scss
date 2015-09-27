@@ -5,9 +5,15 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    color: white;
+    background: #165878;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    a:link, a:visited {
+        color: white;
+    }
 }
 
 .site-title {
@@ -94,6 +100,12 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    color: white;
+    background: #165878;
+
+    a:link, a:visited {
+        color: white;
+    }
 }
 
 .footer-heading {
