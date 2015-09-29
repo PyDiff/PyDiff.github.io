@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="page-link" href="{{ site.baseurl }}/"><img src="{{ base.url }}/logo88.png" height="44" alt=""></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,6 +14,7 @@
       </a>
 
       <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}">Home</a>
         {% assign pages = site.pages | sort:"order"  %}
         {% for page in pages %}
           {% if page.title %}
