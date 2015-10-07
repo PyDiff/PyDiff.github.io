@@ -25,7 +25,7 @@ and we'll be involved in PyCon Namibia 2016 in February, while <a href="http://p
   <ul class="post-list">
     {% for post in site.events %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {{post.time}}</span>
         {% if post.venue %}
           at <span class="post-meta">{{ post.venue }}</span>
         {% endif %}
