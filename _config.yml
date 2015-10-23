@@ -1,8 +1,8 @@
 # Site settings
 title: PyDiff - the Cardiff Python meetup
-description: PyDiff is a Python and Django user group based in Cardiff, Wales.
+description: PyDiff is a Python and Django user group based in Cardiff, Wales. PyDiff holds monthly meetups in Cardiff for anyone who uses or wants to learn about Python. We hold technical talks and workshops and occasional social events to which everyone is welcome, from experienced programmers to new learners, wherever their interest lies.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.pydiff.wales" # the base hostname & protocol for your site
 twitter_username: PyDiff
 github_username:  PyDiff
 email: "contact@pydiff.org"
