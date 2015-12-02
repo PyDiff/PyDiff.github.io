@@ -18,7 +18,7 @@ This isn't just an idle invitation. It's being backed up by a *speaker mentor pr
 put you in touch with an experienced speaker who will be delighted to help you prepare your
 proposal and practise your talk - take advantage of it!
 
-Still, **there's nothing like practicisng your talk before a small audience** , so to help, PyDiff
+Still, **there's nothing like practicisng your talk before a small audience**, so to help, PyDiff
 will offer you just that.
 
 If you think you'd like to submit a DjangoCon proposal, get in touch with us. We can help you with
