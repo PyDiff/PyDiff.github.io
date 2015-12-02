@@ -20,25 +20,39 @@ layout: default
 
 and we'll be involved in PyCon Namibia 2016 in February, while <a href="http://pyconuk.org">PyCon UK</a> will come to Cardiff in September 2016.</p>
 
+  <h1 class="page-heading">News</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+
+      {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
+
+          <li>
+
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+
+    {% endfor %}
+  </ul>
+
 
   <h1 class="page-heading">Forthcoming events</h1>
 
   {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
 
   <ul class="post-list">
-    {% for post in site.events %}
+    {% for event in site.events %}
 
-      {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
+      {% capture event_date %} {{ event.date | date: '%s'}} {% endcapture %}
 
-      {% if post_date >= current_date %}
+      {% if event_date >= current_date %}
           <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {{post.time}}</span>
-            {% if post.venue %}
-              at <span class="post-meta">{{ post.venue }}</span>
+          <span class="post-meta">{{ event.date | date: "%b %-d, %Y" }} {{event.time}}</span>
+            {% if event.venue %}
+              at <span class="post-meta">{{ event.venue }}</span>
             {% endif %}
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+              <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>
           </li>
       {% endif %}
 
