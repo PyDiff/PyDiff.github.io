@@ -7,6 +7,7 @@ twitter_username: PyDiff
 github_username:  PyDiff
 email: "contact@pydiff.org"
 gitter_url: "https://gitter.im/PyDiff/PyDiff.github.io"
+meetup_url: "http://www.meetup.com/PyDiff/"
 
 # Build settings
 markdown: kramdown
