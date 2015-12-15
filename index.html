@@ -19,24 +19,6 @@ layout: default
   </ul>
 
 and we'll be involved in PyCon Namibia 2016 in February, while <a href="http://pyconuk.org">PyCon UK</a> will come to Cardiff in September 2016.</p>
-
-  <h1 class="page-heading">News</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-
-      {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
-
-          <li>
-
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </li>
-
-    {% endfor %}
-  </ul>
-
-
   <h1 class="page-heading">Forthcoming events</h1>
 
   {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
@@ -59,6 +41,24 @@ and we'll be involved in PyCon Namibia 2016 in February, while <a href="http://p
 
     {% endfor %}
   </ul>
+
+
+  <h1 class="page-heading">News</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+
+      {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
+
+          <li>
+
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+
+    {% endfor %}
+  </ul>
+
 
 
 </div>
