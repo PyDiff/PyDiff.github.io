@@ -10,7 +10,7 @@ order: 50
   {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
 
   <ul class="post-list">
-    {% for post in site.events %}
+    {% for post in site.events reversed %}
 
       {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
 
