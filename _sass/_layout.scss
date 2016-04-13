@@ -31,7 +31,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 100px;
 
     .menu-icon {
         display: none;
@@ -40,6 +40,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 22px;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -110,7 +111,7 @@ h1, h2, h3 {font-weight: bold;}
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: $spacing-unit / 2;
 }
 
