@@ -31,7 +31,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 100px;
 
     .menu-icon {
         display: none;
@@ -40,6 +40,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 22px;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -49,7 +50,7 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
+        top: 24px;
         right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
@@ -93,7 +94,7 @@
     }
 }
 
-h1, h2, h3 {font-weight: bold;}
+h1, h2, h3 {font-weight: 200;}
 
 /**
  * Site footer
@@ -110,7 +111,7 @@ h1, h2, h3 {font-weight: bold;}
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -169,7 +170,14 @@ h1, h2, h3 {font-weight: bold;}
     }
 }
 
+/**
+* Front Page
+*/
 
+.intro {
+    font-size: $base-font-size * 1.4;
+    line-height: $base-line-height * 0.9;
+}
 
 /**
  * Page content
@@ -179,7 +187,7 @@ h1, h2, h3 {font-weight: bold;}
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: $base-font-size * 1.4;
 }
 
 .post-list {

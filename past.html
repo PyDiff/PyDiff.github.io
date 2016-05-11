@@ -10,13 +10,13 @@ order: 50
   {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
 
   <ul class="post-list">
-    {% for post in site.events %}
+    {% for post in site.events reversed %}
 
-      {% capture post_date %} {{ post.date | date: '%s'}} {% endcapture %}
+      {% capture post_date %} {{ post.when | date: '%s'}} {% endcapture %}
 
       {% if post_date < current_date %}
           <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} {{post.time}}</span>
+          <span class="post-meta">{{ post.when | date: "%b %-d, %Y" }} {{post.time}}</span>
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
