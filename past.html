@@ -7,12 +7,12 @@ order: 50
 
 <div class="home">
 
-  {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
+  {% capture current_date %} {{ 'now' | date: '%F'}} {% endcapture %}
 
   <ul class="post-list">
     {% for post in site.events reversed %}
 
-      {% capture post_date %} {{ post.when | date: '%s'}} {% endcapture %}
+      {% capture post_date %} {{ post.when | date: '%F'}} {% endcapture %}
 
       {% if post_date < current_date %}
           <li>
