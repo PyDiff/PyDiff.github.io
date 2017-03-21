@@ -10,12 +10,12 @@ layout: default
 
   <h1 class="page-heading">Recent and future events</h1>
 
-  {% capture current_date %} {{ 'now' | date: '%s'}} {% endcapture %}
+  {% capture current_date %} {{ 'now' | date: '%F'}} {% endcapture %}
 
   <ul class="post-list">
     {% for event in site.events %}
 
-      {% capture event_date %} {{ event.when | date: '%s'}} {% endcapture %}
+      {% capture event_date %} {{ event.when | date: '%F'}} {% endcapture %}
 
       {% if event_date >= current_date %}
           <li>
